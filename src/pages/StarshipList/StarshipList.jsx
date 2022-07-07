@@ -14,7 +14,6 @@ const StarshipList = () => {
   return (
     <>
     <div>
-      <h3>Starships!?</h3>
       <div className="ship-container">
         {starships.map(starship => 
           <Link to="/starships" state={{starship}} key={starship.name}>
