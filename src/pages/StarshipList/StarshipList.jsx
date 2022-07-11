@@ -12,18 +12,16 @@ const StarshipList = () => {
     fetchStarshipList()
   })
   return (
-    <>
-    <div>
-      <div className="ship-container">
-        {starships.map(starship => 
-          <Link to="/starships" state={{starship}} key={starship.name}>
+
+    <div className="ship-container">
+      {starships.map(starship => 
+        <Link to="/starships" state={{starship}} key={starship.name} id="ship">
             {starship.name}
-          </Link>
+        </Link>
       
-          )}
-      </div>
+        )}
     </div>
-    </>
+  
 
   )
 }

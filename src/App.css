@@ -37,5 +37,59 @@
   }
 }
 
+.ship-header {
+  background-color: black;
+  display: flex;
+  align-content: stretch;
+  color: #FAD02C;
+  justify-content: center;
+
+}
+
+.ship-container {
+  padding: 200px;
+  margin: 100px;
+  gap:20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#ship {
+  background-color: #FAD02C;
+  border-radius: 10%;
+  padding: 100px ;
+  display: flex;
+  display: wrap;
+  text-decoration: none;
+  color: #282c34;
+
+}
+
+#ship:hover {
+  color: bisque;
+}
 
 
+
+
+.all-starships {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  padding: 20px ;
+  background-color:#282c34;
+  color: #FAD02C;
+  border-radius: 10%;
+  gap: 30px 30px 30px 30px;
+}
+
+#return {
+  color: #FAD02C;
+  text-decoration: none;
+}
+#return:hover {
+  color:beige;
+}

@@ -17,13 +17,25 @@ const StarshipsDetails = () => {
   }, [location.state.starship.url])
   
   return(
-    <>
-    <h2>Starship Details</h2>
+    <div className="all-starships">
+      {starshipDetails.name ?
+      <>
+        <div>
+          <h2>N A M E: {starshipDetails.name}</h2>
+          <h2>M O D E L: {starshipDetails.model}</h2>
+            <Link to="/" id="return">
+              RETURN
+            </Link>
+        </div>
+      </>
+      :
+      <>
+      <p>Loading details ...</p>
+      </>
+      }
+    </div>
     
-    <h2>Name: {starshipDetails.name}</h2>
-    <h2>Model: {starshipDetails.model}</h2>
-
-    </>
+  
 
     )
 } 
